@@ -8,17 +8,48 @@
   height: calc(100vh - 120px);
   padding: 20px 40px;
 }
+.container-titulo-filtros{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+
+  & h1{
+    margin: 21.44px 40px 20px 0;
+  }
+
+  & input{
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+}
 .container-todos-cards{
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
   overflow-y: auto;
   gap: 40px;
+  margin-top: 40px;
   
 }
-.teste{
-  height: calc(100vh - 200px);
+.container-card-total{
+  height: calc(100vh - 280px);
   overflow-y: auto;
+}
+@media (max-width: 1050px) {
+  .container-titulo-filtros{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+
+    & h1{
+      margin: 21.44px 0 0 0;
+    }
+  }
 }
 @media (max-width: 500px) {
   .container-tela{
