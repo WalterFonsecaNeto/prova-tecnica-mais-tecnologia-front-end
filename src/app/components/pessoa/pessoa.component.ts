@@ -23,7 +23,6 @@ export class PessoaComponent implements OnInit  {
 
   async buscarPessoa(){
     this.pessoas = await this.pessoaApi.buscarPessoas();
-    console.log(this.pessoas);
   }
 
 

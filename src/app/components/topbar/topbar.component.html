@@ -1,4 +1,8 @@
 <div class="container-total-topbar">
-    <h1>ProjetoMaisTecnologia</h1>
-    <button>Sair <fa-icon [icon]="faRightToBracket"></fa-icon> </button>
+  <h1>ProjetoMaisTecnologia</h1>
+  @if ( !telaInicial) {
+  <button (click)="Sair()">
+    Sair <fa-icon [icon]="faRightToBracket"></fa-icon>
+  </button>
+  }
 </div>

@@ -1,9 +1,23 @@
 <div class="container-card-pessoa">
   <div class="container-card-conteudo">
     <h3 class="card-nome">{{ pessoa.nome }}</h3>
-    <p class="card-info">{{ pessoa.email }}</p>
-    <p class="card-info">{{ pessoa.telefone }}</p>
-    <p class="card-info">{{ pessoa.dataNascimento }}</p>
-    <p class="card-info">{{ pessoa.endereco }}</p>
+    <div class="card-informacoes">
+      <p class="card-info">
+        <fa-icon [icon]="faEnvelope"></fa-icon>
+        <span>{{ pessoa.email }}</span>
+      </p>
+      <p class="card-info">
+        <fa-icon [icon]="faPhone"></fa-icon>
+        <span>{{ pessoa.telefone }}</span>
+      </p>
+      <p class="card-info">
+        <fa-icon [icon]="faBirthdayCake"></fa-icon>
+        <span>{{ pessoa.dataNascimento | date: 'dd/MM/yyyy' }}</span>
+      </p>
+      <p class="card-info">
+        <fa-icon [icon]="faMapMarkerAlt"></fa-icon>
+        <span>{{ pessoa.endereco }}</span>
+      </p>
+    </div>
   </div>
 </div>

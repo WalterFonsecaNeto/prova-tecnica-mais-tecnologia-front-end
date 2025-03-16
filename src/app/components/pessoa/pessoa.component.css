@@ -14,6 +14,7 @@
   flex-wrap: wrap;
   overflow-y: auto;
   gap: 40px;
+  
 }
 .teste{
   height: calc(100vh - 200px);
