@@ -1,16 +1,29 @@
+
 .container-sidebar-tela {
   display: flex;
   flex-direction: row;
 }
 .container-tela {
   width: 100%;
+  height: calc(100vh - 120px);
   padding: 20px 40px;
 }
-
+.container-todos-cards{
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  gap: 40px;
+}
+.teste{
+  height: calc(100vh - 200px);
+  overflow-y: auto;
+}
 @media (max-width: 500px) {
-  .container-tela {
-    margin-left: 60px;
+  .container-tela{
+    margin-left: 80px;
     width: 100%;
     height: calc(100vh - 120px);
+    padding: 0;
   }
 }

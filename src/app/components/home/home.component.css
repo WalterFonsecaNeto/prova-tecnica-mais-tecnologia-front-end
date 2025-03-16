@@ -10,8 +10,9 @@
 
 @media (max-width: 500px) {
   .container-tela{
-    margin-left: 60px;
+    margin-left: 80px;
     width: 100%;
-    height: calc(100vh - 120px)
+    height: calc(100vh - 120px);
+    padding: 0;
   }
 }

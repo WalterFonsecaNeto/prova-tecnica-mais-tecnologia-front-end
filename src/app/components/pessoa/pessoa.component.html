@@ -3,6 +3,12 @@
   <app-sidebar></app-sidebar>
   <div class="container-tela">
     <h1>Pessoa</h1>
-    <!-- Conteúdo da página aqui -->
+    <div class="teste">
+      <div class="container-todos-cards">
+        @for (item of pessoas; track item.id) {
+        <app-card-pessoa [pessoa]="item"></app-card-pessoa>
+        }
+      </div>
+    </div>
   </div>
 </div>
