@@ -1,9 +1,16 @@
-.container-sidebar-tela{
-    display: flex;
-    flex-direction: row;
-  
-  }
-  .container-tela{
+.container-sidebar-tela {
+  display: flex;
+  flex-direction: row;
+}
+.container-tela {
+  width: 100%;
+  padding: 20px 40px;
+}
+
+@media (max-width: 500px) {
+  .container-tela {
+    margin-left: 60px;
     width: 100%;
-    padding: 20px 40px;
+    height: calc(100vh - 120px);
   }
+}
