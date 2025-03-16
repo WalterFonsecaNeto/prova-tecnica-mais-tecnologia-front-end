@@ -1,1 +1,36 @@
-<p>sidebar works!</p>
+<div
+  class="container-total-sidebar"
+  [class.container-total-sidebar-fechado]="sidbarFechado"
+>
+  <div class="container-nav-botao-alterar-estado">
+    <nav class="container-nav">
+      <button
+        routerLink="/home"
+        routerLinkActive="botao-nav-info-ativo"
+        [class.botao-nav-info-fechado]="sidbarFechado"
+        class="botao-nav-info"
+      >
+        <fa-icon [icon]="faHouse"></fa-icon>
+        @if(!sidbarFechado){
+        <h3>Home</h3>
+        }
+      </button>
+
+      <button
+        routerLink="/pessoa"
+        routerLinkActive="botao-nav-info-ativo"
+        [class.botao-nav-info-fechado]="sidbarFechado"
+        class="botao-nav-info"
+      >
+        <fa-icon [icon]="faUser"></fa-icon>
+        @if(!sidbarFechado){
+        <h3>Pessoa</h3>
+        }
+      </button>
+    </nav>
+
+    <button class="botao-alterar-estado" (click)="alterarEstadoSidebar()">
+      <fa-icon [icon]="sidbarFechado ? faArrowRight : faArrowLeft"></fa-icon>
+    </button>
+  </div>
+</div>

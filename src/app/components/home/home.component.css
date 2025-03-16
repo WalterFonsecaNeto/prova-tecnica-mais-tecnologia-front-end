@@ -1,0 +1,9 @@
+.container-sidebar-tela{
+  display: flex;
+  flex-direction: row;
+
+}
+.container-tela{
+  width: 100%;
+  padding: 20px 40px;
+}
