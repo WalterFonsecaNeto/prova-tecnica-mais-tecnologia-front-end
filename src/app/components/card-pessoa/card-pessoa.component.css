@@ -5,7 +5,7 @@
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 280px;
-  height: 300px;
+  height: 320px;
   margin: 8px; 
 }
 
@@ -48,6 +48,22 @@
 
 .card-info span {
   line-height: 1.2; 
+}
+.botao-editar{
+  display: flex;
+  width: 20px;
+  justify-content: flex-start;
+  gap: 5px;
+  padding: 0;
+  border: none;
+  color: #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  &:hover{
+    color: #555555;
+  }
+  
 }
 
 @media (max-width: 480px) {

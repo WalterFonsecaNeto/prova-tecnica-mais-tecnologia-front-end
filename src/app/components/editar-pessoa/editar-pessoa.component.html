@@ -1,0 +1,61 @@
+<app-topbar></app-topbar>
+
+<div class="container-conteudo-tela">
+  <div class="formulario-estilizado">
+    <h1 class="titulo">Editar Pessoa</h1>
+    <div class="formulario-item">
+      <label for="nome">Nome</label>
+      <input
+        type="text"
+        class="formulario-input"
+        id="nome"
+        [(ngModel)]="nome"
+        placeholder="Digite seu nome"
+      />
+    </div>
+
+    <div class="formulario-item">
+      <label for="email">Email</label>
+      <input
+        type="email"
+        class="formulario-input"
+        id="email"
+        [(ngModel)]="email"
+        placeholder="Digite seu email"
+      />
+    </div>
+
+    <div class="formulario-item">
+      <label for="telefone">Telefone</label>
+      <input
+        type="tel"
+        class="formulario-input"
+        id="telefone"
+        [(ngModel)]="telefone"
+        placeholder="Digite seu telefone"
+      />
+    </div>
+
+    <div class="formulario-item">
+      <label for="dataNascimento">Data de Nascimento</label>
+      <input
+        type="date"
+        class="formulario-input"
+        id="dataNascimento"
+        [(ngModel)]="dataNacimento"
+      />
+    </div>
+
+    <div class="formulario-item">
+      <label for="endereco">Endereço</label>
+      <input
+        type="text"
+        class="formulario-input"
+        id="endereco"
+        [(ngModel)]="endereco"
+        placeholder="Digite seu endereço"
+      />
+    </div>
+    <button (click)="AtualizarPessoa()" class="botao-salvar">Salvar</button>
+  </div>
+</div>

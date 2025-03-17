@@ -12,12 +12,15 @@
       </p>
       <p class="card-info">
         <fa-icon [icon]="faBirthdayCake"></fa-icon>
-        <span>{{ pessoa.dataNascimento | date: 'dd/MM/yyyy' }}</span>
+        <span>{{ pessoa.dataNascimento | date : "dd/MM/yyyy" }}</span>
       </p>
       <p class="card-info">
         <fa-icon [icon]="faMapMarkerAlt"></fa-icon>
         <span>{{ pessoa.endereco }}</span>
       </p>
+      <button class="botao-editar" (click)="EditarPessoa(pessoa)">
+        <fa-icon [icon]="faPencilAlt"></fa-icon> Editar
+      </button>
     </div>
   </div>
 </div>
