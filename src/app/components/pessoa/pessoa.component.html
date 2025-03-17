@@ -1,0 +1,18 @@
+<app-topbar></app-topbar>
+<div class="container-sidebar-tela">
+  <app-sidebar></app-sidebar>
+  <div class="container-tela">
+    <div class="container-titulo-filtros">
+      <h1>Pessoa</h1>
+      <input type="search" [(ngModel)]="nomeFiltro" placeholder="Nome" />
+      <input type="search" [(ngModel)]="emailFiltro" placeholder="Email" />
+    </div>
+    <div class="container-card-total">
+      <div class="container-todos-cards">
+        @for (item of pessoasFiltradas; track item.id) {
+        <app-card-pessoa [pessoa]="item"></app-card-pessoa>
+        }
+      </div>
+    </div>
+  </div>
+</div>

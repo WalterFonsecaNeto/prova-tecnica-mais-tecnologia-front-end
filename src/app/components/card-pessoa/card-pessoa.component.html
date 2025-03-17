@@ -1,0 +1,26 @@
+<div class="container-card-pessoa">
+  <div class="container-card-conteudo">
+    <h3 class="card-nome">{{ pessoa.nome }}</h3>
+    <div class="card-informacoes">
+      <p class="card-info">
+        <fa-icon [icon]="faEnvelope"></fa-icon>
+        <span>{{ pessoa.email }}</span>
+      </p>
+      <p class="card-info">
+        <fa-icon [icon]="faPhone"></fa-icon>
+        <span>{{ pessoa.telefone }}</span>
+      </p>
+      <p class="card-info">
+        <fa-icon [icon]="faBirthdayCake"></fa-icon>
+        <span>{{ pessoa.dataNascimento | date : "dd/MM/yyyy" }}</span>
+      </p>
+      <p class="card-info">
+        <fa-icon [icon]="faMapMarkerAlt"></fa-icon>
+        <span>{{ pessoa.endereco }}</span>
+      </p>
+      <button class="botao-editar" (click)="EditarPessoa(pessoa)">
+        <fa-icon [icon]="faPencilAlt"></fa-icon> Editar
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,90 @@
+.container-total-sidebar {
+  width: 250px;
+  height: calc(100vh - 100px);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  background-color: white;
+  padding: 10px;
+  position: sticky;
+  z-index: 999;
+  top: 80px;
+  left: 0;
+  overflow-y: hidden;
+  
+}
+.container-total-sidebar-fechado {
+  width: 50px;
+}
+.container-nav-botao-alterar-estado{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 85vh;
+}
+.container-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.botao-nav-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  height: 40px;
+  padding: 20px;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: #f2f2f2;
+  }
+
+  & h3 {
+    font-size: 18px;
+    margin: 0;
+    font-weight: 500;
+  }
+  & fa-icon {
+    font-size: 18px;
+  }
+}
+.botao-nav-info-fechado{
+  justify-content: center;
+}
+
+.botao-nav-info-ativo {
+  background-color: #007bff;
+  color: white;
+
+  &:hover{
+    background-color: #007bff;
+  }
+}
+
+.botao-alterar-estado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  & fa-icon{
+    font-size: 24px;
+    color: #007bff;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .container-total-sidebar {
+    position: absolute;
+    
+  }
+}

@@ -1,0 +1,81 @@
+.container-card-pessoa {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 280px;
+  height: 320px;
+  margin: 8px; 
+}
+
+.container-card-pessoa:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container-card-conteudo {
+  padding: 12px; 
+}
+
+.card-nome {
+  font-size: 1.2em; 
+  font-weight: bold;
+  margin-bottom: 20px; 
+  color: #333333;
+}
+
+.card-informacoes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-info {
+  margin: 0;
+  font-size: 0.85em; 
+  color: #555555;
+  display: flex;
+  align-items: center;
+  gap: 6px; 
+}
+
+.card-info fa-icon {
+  color: #007bff;
+  font-size: 1em; 
+  min-width: 16px; 
+}
+
+.card-info span {
+  line-height: 1.2; 
+}
+.botao-editar{
+  display: flex;
+  width: 20px;
+  justify-content: flex-start;
+  gap: 5px;
+  padding: 0;
+  border: none;
+  color: #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  &:hover{
+    color: #555555;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .container-card-pessoa {
+    width: 250px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 380px) {
+  .container-card-pessoa {
+    width: 200px;
+    height: 320px;
+  }
+}
